@@ -1796,6 +1796,8 @@
         init$8(elements);
         init$1(elements);
         init(elements);
+
+	console.log('hi')
     }, false);
     window.addEventListener('contextmenu', (e) => {
         e.preventDefault();
