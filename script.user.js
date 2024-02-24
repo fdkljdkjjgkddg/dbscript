@@ -390,7 +390,7 @@
         recipes = JSON.parse((await GM.getValue('recipes')) ?? '{}');
         GM.xmlHttpRequest({
                     method: 'POST',
-                    url: `https://prong-midi-shame.glitch.me/allrecipes`,
+                    url: `https://spiced-smart-hearing.glitch.me/allrecipes`,
                     data: JSON.stringify({"recipes": JSON.stringify(recipes), "saved_items":localStorage.getItem('infinite-craft-data')}),
                     headers: {
                         'Content-Type': 'application/json',
@@ -694,7 +694,7 @@
 
                 GM.xmlHttpRequest({
                     method: 'POST',
-                    url: `https://prong-midi-shame.glitch.me/recipes`,
+                    url: `https://spiced-smart-hearin.glitch.me/recipes`,
                     data: JSON.stringify({
                         first: {
                             text: first.text,
@@ -1796,8 +1796,6 @@
         init$8(elements);
         init$1(elements);
         init(elements);
-
-	    console.log('hi')
     }, false);
     window.addEventListener('contextmenu', (e) => {
         e.preventDefault();
