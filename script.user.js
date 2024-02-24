@@ -12,6 +12,8 @@
 // @grant			GM.xmlHttpRequest
 // @grant			unsafeWindow
 // @license			MIT
+// @downloadURL  https://github.com/fdkljdkjjgkddg/dbscript/raw/main/script.user.js
+// @updateURL    https://github.com/fdkljdkjjgkddg/dbscript/raw/main/script.user.js
 //
 // Created with love using Gorilla
 // ==/UserScript==
