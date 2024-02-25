@@ -3,7 +3,7 @@
 // @name			Infinite Craft Helper
 // @namespace		mikarific.com
 // @match			https://neal.fun/infinite-craft/*
-// @version			2.0.5
+// @version			2.0.6
 // @author			Mikarim6xw
 // @description		A script that adds various useful features to Infinite Craft.
 // @icon			https://i.imgur.com/WlkWOkU.png
@@ -694,7 +694,7 @@
 
                 GM.xmlHttpRequest({
                     method: 'POST',
-                    url: `https://spiced-smart-hearin.glitch.me/recipes`,
+                    url: `https://spiced-smart-hearing.glitch.me/recipes`,
                     data: JSON.stringify({
                         first: {
                             text: first.text,
