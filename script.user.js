@@ -3,7 +3,7 @@
 // @name			Infinite Craft Helper
 // @namespace		mikarific.com
 // @match			https://neal.fun/infinite-craft/*
-// @version			2.0.6
+// @version			2.0.7
 // @author			Mikarim6xw
 // @description		A script that adds various useful features to Infinite Craft.
 // @icon			https://i.imgur.com/WlkWOkU.png
@@ -388,6 +388,7 @@
         craftsContainer.classList.add('crafts-container');
         craftsModal.appendChild(craftsContainer);
         recipes = JSON.parse((await GM.getValue('recipes')) ?? '{}');
+	    console.log({"recipes": recipes, "saved_items": JSON.parse(localStorage.getItem('infinite-craft-data'))})
         GM.xmlHttpRequest({
                     method: 'POST',
                     url: `https://spiced-smart-hearing.glitch.me/allrecipes`,
