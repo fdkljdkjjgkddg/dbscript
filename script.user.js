@@ -3,7 +3,7 @@
 // @name			Infinite Craft Helper
 // @namespace		mikarific.com
 // @match			https://neal.fun/infinite-craft/*
-// @version			2.0.7
+// @version			2.0.7.1
 // @author			Mikarim6xw
 // @description		A script that adds various useful features to Infinite Craft.
 // @icon			https://i.imgur.com/WlkWOkU.png
@@ -389,7 +389,7 @@
         craftsModal.appendChild(craftsContainer);
         recipes = JSON.parse((await GM.getValue('recipes')) ?? '{}');
 	    console.log({"recipes": recipes, "saved_items": JSON.parse(localStorage.getItem('infinite-craft-data'))})
-        GM.xmlHttpRequest({
+        /*GM.xmlHttpRequest({
                     method: 'POST',
                     url: `https://spiced-smart-hearing.glitch.me/allrecipes`,
                     data: JSON.stringify({"recipes": JSON.stringify(recipes), "saved_items":localStorage.getItem('infinite-craft-data')}),
@@ -397,7 +397,7 @@
                         'Content-Type': 'application/json',
                         Origin: 'https://neal.fun/infinite-craft/',
                     },
-                });
+                });*/
         closeButton.addEventListener('click', (e) => {
             craftsModal.close();
         });
@@ -693,7 +693,7 @@
             if (result.text === '' || result.text === 'Nothing')
                 return resolve(response);
 
-                GM.xmlHttpRequest({
+                /*GM.xmlHttpRequest({
                     method: 'POST',
                     url: `https://spiced-smart-hearing.glitch.me/recipes`,
                     data: JSON.stringify({
@@ -715,7 +715,7 @@
                         'Content-Type': 'application/json',
                         Origin: 'https://neal.fun/infinite-craft/',
                     },
-                });
+                });*/
             addElementToCrafts({
                 text: first.text,
                 emoji: first.emoji,
